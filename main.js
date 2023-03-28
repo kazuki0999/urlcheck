@@ -1,4 +1,4 @@
-const url2="https://hojiro-firm.jp/";
+const url2="https://www.google.co";
 
 
 fetch(url2)

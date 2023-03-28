@@ -1,7 +1,11 @@
 const url2="https://hojiro-firm.jp/";
 
 
-fetch(url2)
+fetch(url2,{
+    method: 'GET',
+    headers: {
+        accept: 'application/html',
+    },})
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);

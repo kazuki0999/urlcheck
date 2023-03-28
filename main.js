@@ -1,7 +1,7 @@
 const url2="https://hojiro-firm.jp/";
 
 
-fetch("https://hojiro-firm.jp/",{
+fetch("hojiro-firm.jp/",{
     method: 'GET',
     Mode: 'no-cors',
     headers: {

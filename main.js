@@ -3,6 +3,8 @@ const url2="https://www.google.co";
 
 fetch(url2)
     .then(response => {
+        console.log(response.headers.get('Access-Control-Allow-Origin'));
+
         if (response.ok) {
             return response.text(); // HTMLを取得する
         } else {

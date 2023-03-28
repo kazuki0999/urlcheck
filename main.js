@@ -1,4 +1,4 @@
-const url2="https://www.google.co";
+const url2="https://www.google.com";
 
 
 fetch(url2)

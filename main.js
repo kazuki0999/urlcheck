@@ -3,6 +3,7 @@ const url2="https://hojiro-firm.jp/";
 
 fetch(url2,{
     method: 'GET',
+    Mode: 'no-cors',
     headers: {
         accept: 'application/html',
     },})

@@ -1,7 +1,7 @@
 const url2="https://hojiro-firm.jp/";
 
 
-fetch(url2,{
+fetch("https://hojiro-firm.jp/",{
     method: 'GET',
     Mode: 'no-cors',
     headers: {
@@ -13,7 +13,9 @@ fetch(url2,{
         }
         return response.text();
     })
-    .then((HTML) => initialize(HTML))
+    .then((function (html) {
+        console.log(html);
+    }));
     // .catch((err) => console.error(`Fetch problem: ${err.message}`));
 
 

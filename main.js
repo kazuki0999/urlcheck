@@ -13,7 +13,7 @@ fetch(url2,{
         }
         return response.text();
     })
-    .then((json) => initialize(json))
-    .catch((err) => console.error(`Fetch problem: ${err.message}`));
+    .then((HTML) => initialize(HTML))
+    // .catch((err) => console.error(`Fetch problem: ${err.message}`));
 
 

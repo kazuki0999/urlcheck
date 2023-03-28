@@ -4,7 +4,7 @@ const url2="https://hojiro-firm.jp/";
 const fetchHtml = async (url) => {
     const opts = {
         method: 'GET',
-        mode: 'cors',
+        mode: 'no-cors',
         headers: {
             'Content-Type': 'text/html',
         },

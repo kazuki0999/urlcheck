@@ -5,11 +5,31 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" crossorigin src="main.js"></script>
+    <link rel="stylesheet" href="style.scss">
   </head>
   <body>
-  <form id="form">
-    <label>Test field: <input type="text" name="url" /></label>
-    <br /><br />
-    <button type="submit">Submit form</button>
+
+  <form id="form" action="/">
+    <label><span>aaaa</span> <input type="text" name="url" required />
+    <span class="errorMessage"></span>
+    </label>
+    <label><span>aaaa</span> <input type="text" name="url" required />
+      <span class="errorMessage"></span>
+    </label>
+    <label><span>aaaa</span> <input type="text" name="url" required />
+      <span class="errorMessage"></span>
+    </label>
+    <label><span>aaaa</span> <input type="text" name="url" required />
+      <span class="errorMessage"></span>
+    </label>
+    <label><span>aaaa</span> <input type="text" name="url" required />
+      <span class="errorMessage"></span>
+    </label>
+
+    <button id="submit" type="submit">Submit form</button>
   </form>
   <p id="log"></p>
+
+  <footer></footer>
+  </body>
+</html>

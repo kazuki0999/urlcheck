@@ -1,22 +1,22 @@
-const url2="https://www.google.com";
 
 
-fetch(url2,{
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
 
-    headers: {
-        'Content-Type': 'application/html'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-    },})
-    .then(response => {
-        return response.text();
-    })
-    .then(html => {
-        console.log(html);
-    })
-    .catch(error => {
-        console.error(error);
+
+
+const submit=document.getElementById("submit");
+
+submit.addEventListener("click",function (e){
+    e.preventDefault();
+    const inputs=document.querySelectorAll("input");
+    const errors=document.getElementsByClassName("errorMessage")
+    Array.from(inputs).map((e,index)=>{
+        if(e.hasAttribute("required") && e.value==""){
+            errors[index].innerText="入力が完了していません"
+            return false;
+
+        }
     });
+
+    submit.click();
+});
 
